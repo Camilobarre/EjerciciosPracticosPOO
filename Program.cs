@@ -54,3 +54,20 @@ else
 {
     Console.WriteLine("Empleado no encontrado");
 }
+
+//Escuela y Curso
+Escuela escuela = new Escuela();
+Curso curso1 = new Curso { Nombre = "Matematicas", Codigo = 2, Duracion = "8 horas" };
+Curso curso2 = new Curso { Nombre = "Ingles", Codigo = 7, Duracion = "4 horas" };
+escuela.AgregarCurso(curso1);
+escuela.AgregarCurso(curso2);
+escuela.MostrarCursos();
+Curso encontradoCurso = escuela.BuscarCursoPorNombre("Matematicas");
+if (encontradoCurso != null)
+{
+    Console.WriteLine("Curso encontrado: " + encontradoCurso.Nombre + " Codigo: " + encontradoCurso.Codigo + " Duracion: " + encontradoCurso.Duracion);
+}
+else
+{
+    Console.WriteLine("Curso no encontrado");
+}
