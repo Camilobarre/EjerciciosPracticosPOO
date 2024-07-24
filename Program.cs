@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using EjerciciosPracticosPOO.Models;
+
+var miPrimerObjeto = new Basica("Camilo Barreneche", 28);
+miPrimerObjeto.Saludar();
