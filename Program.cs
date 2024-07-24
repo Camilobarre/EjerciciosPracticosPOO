@@ -37,3 +37,20 @@ else
 {
     Console.WriteLine("Prenda no encontrada");
 }
+
+//Empresa y Empleado
+Empresa empresa = new Empresa();
+Empleado empleado1 = new Empleado { Nombre = "Camilo", Cargo = "Ingeniero", Salario = 500.000 };
+Empleado empleado2 = new Empleado { Nombre = "Juan", Cargo = "Doctor", Salario = 200.000 };
+empresa.AgregarEmpleado(empleado1);
+empresa.AgregarEmpleado(empleado2);
+empresa.MostrarEmpleados();
+Empleado encontrado = empresa.BuscarEmpleadoPorNombre("Camilo");
+if (encontrado != null)
+{
+    Console.WriteLine("Empleado encontrado: " + encontrado.Nombre + " Cargo: " + encontrado.Cargo + " Salario: " + encontrado.Salario);
+}
+else
+{
+    Console.WriteLine("Empleado no encontrado");
+}
