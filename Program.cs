@@ -103,3 +103,19 @@ bicicleta.DetenerViaje();
 autobus.IniciarViaje();
 Console.WriteLine(autobus.ObtenerDetallesViaje());
 autobus.DetenerViaje();
+
+//Jerarquia de clases en Producto (Electronico, Ropa, Alimento)
+Producto electronico = new Electronico("Laptop", 1000);
+Producto ropa = new Ropa("Camiseta", 50);
+Producto alimento = new Alimento("Pan", 2);
+electronico.MostrarDetalles();
+ropa.MostrarDetalles();
+alimento.MostrarDetalles();
+
+//Jerarquia de clases en Personal (Doctor, Enfermera, Administrativo)
+Personal doctor = new Doctor("Dr. Barreneche", 5000);
+Personal enfermera = new Enfermera("Enfermera Clara", 3000);
+Personal administrativo = new Administrativo("Administrador Pepito", 2500);
+doctor.MostrarDetalles();
+enfermera.MostrarDetalles();
+administrativo.MostrarDetalles();
