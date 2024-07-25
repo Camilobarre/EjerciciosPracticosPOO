@@ -88,4 +88,18 @@ coche.Arrancar();
 Empleado2 desarrollador = new Desarrollador();
 Empleado2 gerente = new Gerente();
 desarrollador.Trabajar();
-gerente.Trabajar(); 
+gerente.Trabajar();
+
+// Jerarquia de clases en Transporte (Coche2, Bicicleta, Autobus)
+Transporte coche2 = new Coche2();
+Transporte bicicleta = new Bicicleta();
+Transporte autobus = new Autobus();
+coche2.IniciarViaje();
+Console.WriteLine(coche2.ObtenerDetallesViaje());
+coche2.DetenerViaje();
+bicicleta.IniciarViaje();
+Console.WriteLine(bicicleta.ObtenerDetallesViaje());
+bicicleta.DetenerViaje();
+autobus.IniciarViaje();
+Console.WriteLine(autobus.ObtenerDetallesViaje());
+autobus.DetenerViaje();
