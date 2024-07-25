@@ -77,3 +77,9 @@ Figura circulo = new Circulo(5);
 Figura rectangulo = new Rectangulo(4, 6);
 Console.WriteLine("Área del círculo: " + circulo.CalcularArea());
 Console.WriteLine("Área del rectángulo: " + rectangulo.CalcularArea());
+
+//Arrancar Vehiculo de Coche y Moto
+Vehiculo moto = new Moto();
+Vehiculo coche = new Coche();
+moto.Arrancar();
+coche.Arrancar();
