@@ -83,3 +83,9 @@ Vehiculo moto = new Moto();
 Vehiculo coche = new Coche();
 moto.Arrancar();
 coche.Arrancar();
+
+//Manejo de trabajos como Desarrollador y Gerente
+Empleado2 desarrollador = new Desarrollador();
+Empleado2 gerente = new Gerente();
+desarrollador.Trabajar();
+gerente.Trabajar(); 
